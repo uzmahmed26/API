@@ -8,7 +8,7 @@ export default async function Home() {
   console.log(res)
   return (
    <div>{res.map((book:any)=>(
-    <div>
+    <div key={book.id}>
      <Link href={`${book.id}`}>
       <h1 className="text-2xl text-sky-200 p-2 bg-red-500 text-center">{book.name}</h1>
       </Link>
